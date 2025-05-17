@@ -297,6 +297,7 @@ footer {
 @media (max-width: 600px) {
   body {
     padding: 15px;
+    min-height: fit-content;
   }
   
   .floatingelements {
@@ -307,7 +308,7 @@ footer {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -60px;
+    bottom: 60px;
     background: var(--card-bg-light);
     padding: 15px;
     border-radius: 5px;
@@ -347,4 +348,15 @@ footer {
   .todoitems li:hover .delete-button {
     opacity: 1; 
   }
+
+  .notice {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    text-align: center;
+    color: var(--completed-text-light);
+    font-size: 14px;
+    padding: 10px 0;
+}
 }
