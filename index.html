@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="./script.js"></script>
+  
+  <title>Todo app</title>
+  
+</head>
+<body>
+  <div class="floatingelements">
+    <div class="topsection">
+      <h1>TODO</h1>
+      <img class="theme-toggle" src="images/icon-moon.svg" alt="Toggle Theme" />
+    </div>
+   
+    <div class="input">
+      <input type="checkbox" id="newTodo" name="newTodo">
+      <label for="newTodo">
+        <input type="text" id="newTodo" name="newTodo" placeholder="Create a new todo..">
+      </label>
+    </div>
+    <div class="mainsection">
+      <ul class="todoitems">
+        <li class="completed">
+         <input type="checkbox" checked />
+         <span>Complete online JavaScript course</span>
+         <button class="delete-button"></button>
+        </li>
+        <li>
+         <input type="checkbox" />
+         <span>Jog around the park 3x</span>
+         <button class="delete-button"></button>
+        </li>
+        <li>
+         <input type="checkbox" />
+         <span>10 minutes meditation</span>
+         <button class="delete-button"></button>
+        </li>
+        <li>
+         <input type="checkbox" />
+         <span>Read for 1 hour</span>
+         <button class="delete-button"></button>
+        </li>
+        <li>
+         <input type="checkbox" />
+         <span>Pick up groceries</span>
+         <button class="delete-button"></button>
+        </li>
+        <li>
+         <input type="checkbox" />
+         <span>Complete Todo App on Frontend Mentor</span>
+         <button class="delete-button"></button>
+        </li>
+      </ul>
+      <footer>
+        <span> 5 items left</span>
+        <div class="filters">
+          <button>All</button>
+          <button>Active</button>
+          <button>Completed</button>
+        </div>
+        <button class="clear">Clear Completed</button>
+      </footer>
+    </div>
+    <div class="notice">
+      <p>Drag and drop to reorder items</p>
+    </div>
+    
+  </div>
+
+
+  
+</body>
+</html>
